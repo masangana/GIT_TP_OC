@@ -3,9 +3,8 @@
 	// fonction chargeant les informations d"une personne dans de
 	
 	function chargerSessionPersonne($idPersonne,$nom,$postNom,$preNom,$sexe,$dateNaissance,$etatCompte,$idUser){
-		// chargement des info en session et redirection
-		//$_SESSION['login_user'] = $login;
-		// $_SESSION['mdp_user'] = $mdp;
+		
+		
 		$_SESSION['id_user'] = $idUser;
 		$_SESSION['id_personne'] = $idPersonne;
 		$_SESSION['nom_user'] = $nom;
@@ -14,13 +13,7 @@
 		$_SESSION['preNom_user'] = $preNom;
 		$_SESSION['sexe_user'] = $sexe;
 		$_SESSION['date_Naissance'] = $dateNaissance;
-		// $_SESSION['email_user'] = $email;
-		// $_SESSION['telephone_user'] = $telephone;
-		// $_SESSION['adresse_user'] = $adresse;
-		// $_SESSION['profil_user'] = $profil;
-
-		// redirection
-
+		
 		header('Location:index.php');
 		exit();
 	}
